@@ -24,6 +24,7 @@ var score = [50,  100, 99, 2, 67, 70];
 score.sort(function (a, b) {b-a});
 
 // uppercase first letters of string
+var str = prompt()
 function toTitleCase(str)
     { return str.replace(/\w\S*/g, function(txt)
         {return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); 
@@ -54,3 +55,16 @@ const isPrime = num => {
     if(num % i === 0) return false;
     return num !== 1;
 }
+
+//case swapper
+
+var text = prompt();
+
+var ans = text.split('')
+.map((c) =>
+ c === c.toUpperCase() 
+ ? c.toLowerCase()
+ : c.toUpperCase()
+).join('')
+
+console.log(ans)
