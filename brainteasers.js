@@ -9,9 +9,15 @@ if(parseInt(num1, 10) > parseInt(num2, 10))
     else
     if(parseInt(num2, 10) > parseInt(num1, 10)) 
     {
-    console.log("the larger number is"+ num1+ "num2")}                  
+    window.alert("the larger number is"+ num1+ "num2")}                  
     else
-  {console.log("The values "+ num1+ " and "+num2+ " are equal.");}
+  window.alert("The values "+ num1+ " and "+num2+ " are equal.");
+
+// conditional statement to sort numbers
+
+var score = [5]
+
+
 
 // uppercase first letters of string
 function toTitleCase(str)
@@ -19,3 +25,4 @@ function toTitleCase(str)
         {return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); 
     }
 
+//
