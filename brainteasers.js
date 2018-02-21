@@ -1,10 +1,12 @@
 var isString = "Ye"
 
 console.log(isString('Is this a string?'));
+alert(typeof isString)
+
+
 
 console.log(isString([6, 3, 5, 7]));
 
-alert(typeof isString)
 
 var is
 console.log(is_Blank(''));
