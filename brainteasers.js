@@ -13,7 +13,12 @@ if(parseInt(num1, 10) > parseInt(num2, 10))
     else
   window.alert("The values "+ num1+ " and "+num2+ " are equal.");
 
-// conditional statement to sort numbers
+// string checker
+
+var x = "this is a string";
+if (typeof x === 'string') {}
+
+// sort numbers
 
 var score = [50,  100, 99, 2, 67, 70];
 score.sort(function (a, b) {b-a});
@@ -40,4 +45,12 @@ for(x = 1; x <= 6; x++)
      {chr = chr+("*");}
  console.log(chr);
  chr='';    
+}
+
+//prime checker
+
+const isPrime = num => {
+    for(let i = 2; i< num; i++)
+    if(num % i === 0) return false;
+    return num !== 1;
 }
