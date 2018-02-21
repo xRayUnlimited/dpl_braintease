@@ -15,9 +15,8 @@ if(parseInt(num1, 10) > parseInt(num2, 10))
 
 // conditional statement to sort numbers
 
-var score = [5]
-
-
+var score = [50,  100, 99, 2, 67, 70];
+score.sort(function (a, b) {b-a});
 
 // uppercase first letters of string
 function toTitleCase(str)
@@ -25,4 +24,20 @@ function toTitleCase(str)
         {return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); 
     }
 
-//
+// sum the multiples of 3, 5
+var sum = 0;
+for (var x = 0; x < 1000; x++)
+{ if (x % 3 === 0 || x % 5 === 0)
+    { sum += x;}
+}
+console.log(sum);
+
+//construct pattern using loop
+
+var x,y,chr;
+for(x = 1; x <= 6; x++)
+{ for (y = 1; y < x; y++)
+     {chr = chr+("*");}
+ console.log(chr);
+ chr='';    
+}
