@@ -6,3 +6,7 @@ var sort = text.split(' ')
 };
 
 console.log(sort)
+
+//Join string,
+var elements = ['Cheese', 'Bread', 'Sauce']
+console.log(elements.join(' '))
